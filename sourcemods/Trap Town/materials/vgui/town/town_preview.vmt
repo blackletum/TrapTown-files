@@ -1,0 +1,5 @@
+UnlitGeneric
+{
+	$basetexture vgui/town/town_preview
+	$vertexalpha 1
+}

@@ -1,0 +1,6 @@
+UnlitGeneric
+{
+	$basetexture skybox/sky_quarry03up
+	$nofog 1
+	$ignorez 1
+}

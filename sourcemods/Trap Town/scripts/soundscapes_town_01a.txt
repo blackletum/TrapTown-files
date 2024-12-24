@@ -1,0 +1,48 @@
+e3_Techdemo_06
+{
+	dsp	20
+	playlooping
+	{
+		volume		1.0
+		pitch		100
+		attenuation	0
+		wave		ambient/areas/zombie_town/lake_water.wav
+	}
+}
+
+d1_town_street
+{
+	dsp	20	
+	playlooping
+	{
+		volume		0.8
+		wave		ambient/areas/zombie_town/tone_alley.wav
+		pitch		100
+		attenuation	0
+	}
+
+	playrandom
+	{
+		time		6,16
+		volume		0.3,0.7
+		pitch		95,105
+		attenuation	0
+		rndwave
+		{
+			wave	ambient/wind_moan1.wav
+			wave	ambient/wind_moan2.wav
+			wave	ambient/wind_moan3.wav
+			wave	ambient/wind_moan4.wav
+			wave	ambient/areas/zombie_town/crow1.wav
+			wave	ambient/areas/zombie_town/crow2.wav
+			wave	ambient/areas/zombie_town/crow3.wav
+			wave	ambient/areas/zombie_town/crow4.wav
+		    wave	ambient/areas/zombie_town/crow5.wav
+			wave	ambient/areas/zombie_town/wind_snippet1.wav
+			wave	ambient/areas/zombie_town/wind_snippet2.wav
+			wave	ambient/areas/zombie_town/wind_snippet3.wav
+			wave	ambient/areas/zombie_town/wind_snippet4.wav
+		    wave	ambient/areas/zombie_town/wind_snippet5.wav
+		}		
+	}
+}

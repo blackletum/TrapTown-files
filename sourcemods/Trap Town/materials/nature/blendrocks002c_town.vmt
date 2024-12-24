@@ -1,0 +1,17 @@
+WorldVertexTransition
+{
+	$basetexture nature/rockwall009a
+	$basetexture2 nature/dirtfloor004a
+	%tooltexture nature/rockwall009a
+    $surfaceprop concrete
+    $bumpmap Nature/cavewallz_town_normal
+    $bumpmap2 Nature/dirtfloor012a_normal
+	$normalmapalphaenvmapmask 1
+	$envmapcontrast .82
+	$envmapsaturation .8
+	$envmaptint "[ .3 .3 .3]"
+	$fresnelreflection .5
+	$envmap env_cubemap
+//	$basetexture2noenvmap 1
+	%keywords wasteland
+}

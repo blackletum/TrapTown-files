@@ -1,0 +1,5 @@
+VertexlitGeneric
+{
+	$basetexture 	models/props_c17/trashcan02_lid
+	$nocull 		1
+}

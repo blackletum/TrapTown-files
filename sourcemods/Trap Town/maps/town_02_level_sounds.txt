@@ -1,0 +1,132 @@
+"Digger_engine_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vehicles/digger_startengine1.wav"
+}
+
+"Digger_engine_idle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vehicles/digger_idle_loop1.wav"
+}
+
+"Digger_engine_drive"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"95, 105"
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vehicles/digger_drive_loop1.wav"
+}
+
+"Digger_speed"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vehicles/digger_drive_loop1.wav"
+}
+
+"Digger_engine_stop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vehicles/digger_stopengine1.wav"
+}
+
+"Digger_grinder_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vehicles/digger_grinder_start1.wav"
+}
+
+"Digger_grinder_idle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vehicles/digger_grinder_loop1.wav"
+}
+
+"Digger_grinder_stop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vehicles/digger_grinder_stop1.wav"
+}
+
+"Digger_firstgear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		"100,120"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vehicles/digger_trottleon1.wav"
+}
+
+"Digger_trottle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_80dB"
+	"pitch"			"100"
+	"wave"			"vehicles/digger_trottleon1.wav"
+}
+
+"Digger_secondgear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		"80,120"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"		"vehicles/digger_trottleon1.wav"
+}
+
+
+"Digger_skid_normalfriction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"80, 120"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"rndwave"
+	{
+		"wave"	"vehicles/vehicle_skid1.wav"
+		"wave"	"vehicles/vehicle_skid2.wav"
+		"wave"	"vehicles/vehicle_skid3.wav"
+	}
+}

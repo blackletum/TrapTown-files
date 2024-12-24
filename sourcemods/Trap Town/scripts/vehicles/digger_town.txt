@@ -1,0 +1,231 @@
+// This is a test jeep type vehicle for the wasteland
+
+"vehicle"
+{
+	"wheelsperaxle"	"2"
+	"body"
+	{
+		"countertorquefactor"	"0.9"
+		"massCenterOverride"	"0 -16 0"
+		"massoverride"			"1200"		// kg
+		"addgravity"			"0.66"
+		"maxAngularVelocity"	"60"
+	}
+	"engine"
+	{
+		"horsepower"		"1000"
+		"maxrpm"		"4200"
+		"maxspeed"		"10"		// mph
+		"maxReverseSpeed"	"10"		// mph
+		"autobrakeSpeedGain"	"1.1"		// 10% speed gain while coasting, put on the brakes after that
+		"autobrakeSpeedFactor"	"3.0"		// Brake is this times the speed gain
+		"autotransmission"	"1"
+		"axleratio"		"4.56"
+		"gear"			"3.2"		// 1st gear
+		"gear"			"2.4"		// 2nd gear
+		"gear"			"1.5"		// 3rd gear
+		"gear"			"1.0"		// 4th gear
+		"gear"			"0.84"		// 5th gear
+		"shiftuprpm"		"3800"
+		"shiftdownrpm"		"1600"
+
+	}
+	"steering"
+	{
+		"degreesSlow"		"50"	// steering cone at zero to slow speed
+		"degreesFast"		"18"	// steering cone at fast speed to max speed
+		"degreesBoost"		"11"	// steering cone at max boost speed (blend toward this after max speed)
+		"steeringExponent"	"1.4"	// steering function is linear, then raised to this power to be slower at the beginning of the curve, faster at the end
+		"slowcarspeed"		"14"
+		"fastcarspeed"		"20"
+		"slowSteeringRate"	"4.0"		
+		"fastSteeringRate"	"2.0"
+		"steeringRestRateSlow"	"4.0"
+		"steeringRestRateFast"	"2.0"
+		"turnThrottleReduceSlow" "0.01"
+		"turnThrottleReduceFast" "2.0"
+		"brakeSteeringRateFactor"	"6"
+		"throttleSteeringRestRateFactor"	"2"
+		"boostSteeringRestRateFactor"	"1.7"
+		"boostSteeringRateFactor"	"1.7"
+
+		"powerSlideAccel"	"250"
+
+		"skidallowed"		"1"
+		"dustcloud"		"1"
+
+	}
+
+	// front axle
+	"axle"
+	{
+		"wheel"
+		{
+			"radius"	"33"
+			"mass"		"400"
+			"damping"	"0"
+			"rotdamping"	"0.0"
+			"material"	"jeeptire"
+			"skidmaterial"	"slidingrubbertire"
+			"brakematerial" "brakingrubbertire"
+		}
+		"suspension"
+		{
+			"springConstant"		"40"
+			"springDamping"			"0.7"
+			"stabilizerConstant"		"10"
+			"springDampingCompression"	"9"
+			"maxBodyForce"			"9"
+		}
+
+		"torquefactor"	"0.3"
+		"brakefactor"	"0.4"
+	}
+
+	// rear axle
+	"axle"
+	{
+		"wheel"
+		{
+			"radius"	"33"
+			"mass"		"400"
+			"damping"	"0"
+			"rotdamping"	"0.0"
+			"material"	"jeeptire"
+			"skidmaterial"	"slidingrubbertire"
+			"brakematerial" "brakingrubbertire"
+		}
+		"suspension"
+		{
+			"springConstant"		"40"
+			"springDamping"			"0.7"
+			"stabilizerConstant"		"10"
+			"springDampingCompression"	"9"
+			"maxBodyForce"			"9"
+		}
+		"torquefactor"	"0.7"
+		"brakefactor"	"0.6"
+	}
+}
+
+"vehicle_sounds"
+{
+	// List gears in order from lowest speed to highest speed
+	"gear"
+	{
+		"max_speed"		"0.3"
+		"speed_approach_factor" "0.1"
+		"engine_loop"		"Digger_firstgear"
+		"foot_off"		"Digger_engine_idle"
+		"foot_off_slow"		"Digger_engine_idle"
+		"downshifted"		"Digger_skid_normalfriction"
+	}
+	"gear"
+	{
+		"max_speed"		"0.6"
+		"speed_approach_factor" "0.1"
+		"engine_loop"		"Digger_secondgear"
+		"foot_off"		"Digger_engine_idle"
+		"foot_off_slow"		"Digger_engine_idle"
+		"downshifted"		"Digger_skid_normalfriction"
+	}
+	"gear"
+	{
+		"max_speed"		"1.0"
+		"speed_approach_factor" "0.03"
+		"engine_loop"		""Digger_grinder_start""
+		"foot_off"		"Digger_engine_idle"
+		"foot_off_slow"		"Digger_engine_idle"
+	}
+	"state"
+	{
+		"name"		"SS_START_IDLE"
+		"sound"		"Digger_engine_start"
+               "min_time"	"2.0"
+	}
+	"state"
+	{
+		"name"		"SS_IDLE"
+		"sound"		"Digger_engine_drive"
+	}
+	"state"
+	{
+		"name"		"SS_REVERSE"
+		"sound"		"Digger_engine_idle"
+	}
+	"state"
+	{
+		"name"		"SS_SHUTDOWN"
+		"sound"		"Digger_engine_stop"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_0"
+		"sound"		"Digger_firstgear"
+                "min_time"	"1.0"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_0_RESUME"
+		"sound"		"Digger_engine_drive"
+                "min_time"	"1.0"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_1"
+		"sound"		"Digger_engine_drive"
+		"min_time"	"1.0"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_1_RESUME"
+		"sound"		"Digger_firstgear"
+                "min_time"	"1.0"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_2"
+		"sound"		"Digger_engine_drive"
+		"min_time"	"1.0"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_2_RESUME"
+		"sound"		"Digger_firstgear"
+		"min_time"	"1.0"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_3"
+		"sound"		"Digger_engine_drive"
+		"min_time"	"1.0"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_3_RESUME"
+		"sound"		"Digger_firstgear"
+		"min_time"	"1.0"
+	}
+	}
+	"state"
+	{
+		"name"		"SS_SLOWDOWN_HIGHSPEED"
+		"sound"		"Digger_engine_drive"
+		"min_time"	"1.0"
+	}
+	"state"
+	{
+		"name"		"SS_SLOWDOWN"
+		"sound"		"Digger_engine_drive"
+		"min_time"	"1.0"
+	}
+	"engine_start"		
+	"engine_stop"		"Digger_engine_stop"
+	"engine_idle"		"Digger_engine_idle"
+	"turbo"			"Digger_grinder_start"
+	"turbo_off"		"Digger_grinder_stop"
+	"skid_lowfriction"	"Digger_skid_normalfriction"
+	"skid_normalfriction"	"Digger_skid_normalfriction"
+	"skid_highfriction"	"Digger_skid_normalfriction"
+	"speed_sound"		"Digger_engine_idle"
+}

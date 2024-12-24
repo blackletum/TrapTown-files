@@ -1,0 +1,384 @@
+d1_town_indoor
+{
+	dsp	1
+	playlooping
+	{
+		volume		0.1
+		wave		ambient/areas/zombie_town/tone_quiet.wav
+		pitch		100
+		attenuation	0
+	}
+
+	playrandom
+	{
+		time		5,10
+		volume		0.95,1.0
+		pitch		95,105
+		attenuation	0
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/wood_creak1.wav
+			wave	ambient/areas/d1_town/wood_creak2.wav
+			wave	ambient/areas/d1_town/wood_creak3.wav
+			wave	ambient/areas/d1_town/wood_creak4.wav
+			wave	ambient/areas/d1_town/wood_creak5.wav
+			wave	ambient/areas/d1_town/wood_creak6.wav
+			wave	ambient/areas/zombie_town/wind_snippet2.wav
+			wave	ambient/areas/zombie_town/wind_snippet1.wav
+		    wave	ambient/areas/d1_town/hole_hit1.wav
+			wave	ambient/areas/d1_town/hole_hit2.wav
+			wave	ambient/areas/d1_town/hole_hit3.wav
+		    wave	ambient/areas/d1_town/hole_hit4.wav
+		    wave	ambient/areas/d1_town/rubble1.wav
+			wave	ambient/areas/d1_town/rubble2.wav
+			wave	ambient/areas/d1_town/rubble3.wav
+		}		
+	}
+}
+
+d1_town_warehouse_wood
+{
+	dsp	17	
+	playrandom
+	{
+		time		7,15
+		volume		0.8,1.0
+		pitch		95,105
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/wood_creak1.wav
+			wave	ambient/areas/d1_town/wood_creak2.wav
+			wave	ambient/areas/d1_town/wood_creak3.wav
+			wave	ambient/areas/d1_town/wood_creak4.wav
+			wave	ambient/areas/d1_town/wood_creak5.wav
+			wave	ambient/areas/d1_town/wood_creak6.wav
+			wave	ambient/areas/d1_town/rubble1.wav
+			wave	ambient/areas/d1_town/rubble2.wav
+			wave	ambient/areas/d1_town/rubble3.wav
+		}		
+	}
+
+	// First Hole
+	playlooping
+	{
+		position	0
+		volume		0.20
+		wave		ambient/areas/d1_town/hole_amb1.wav
+		pitch		100
+	}
+
+	// Second and Third Hole
+	playlooping
+	{
+		position	1
+		volume		0.1
+		wave		ambient/areas/d1_town/hole_amb2.wav
+		pitch		100
+	}
+
+	playrandom
+	{
+		position	1
+		time		5,10
+		volume		0.6,0.9
+		pitch		70,120
+		attenuation	0
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/hole_hit1.wav
+			wave	ambient/areas/d1_town/hole_hit2.wav
+			wave	ambient/areas/d1_town/hole_hit3.wav
+			wave	ambient/areas/d1_town/hole_hit4.wav
+			wave	ambient/areas/d1_town/hole_hit5.wav
+		}
+	
+	}
+
+	// Fourth  Hole
+	playlooping
+	{
+		position	2
+		volume		0.7
+		wave		ambient/areas/d1_town/hole_amb3.wav
+		pitch		100
+	}
+
+	playrandom
+	{	
+		position	2
+		attenuation	1	
+		time		5,10
+		volume		0.2,0.35
+		pitch		98,102
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/hole_hit1.wav
+			wave	ambient/areas/d1_town/hole_hit2.wav
+			wave	ambient/areas/d1_town/hole_hit3.wav
+			wave	ambient/areas/d1_town/hole_hit4.wav
+			wave	ambient/areas/d1_town/hole_hit5.wav
+
+			wave	ambient/areas/d1_town/wind_hit1.wav
+			wave	ambient/areas/d1_town/wind_hit2.wav
+			wave	ambient/areas/d1_town/wind_hit3.wav
+		}
+	}
+
+	// Wood Shutter
+	playlooping
+	{
+		position	3
+		volume		0.8,0.9
+		wave		ambient/areas/d1_town/shutter_amb.wav
+		pitch		100
+	}
+
+	playrandom
+	{
+		position	3
+		time		5,8
+		volume		0.8,0.9
+		pitch		98,106
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/shutter1.wav
+			wave	ambient/areas/d1_town/shutter2.wav
+			wave	ambient/areas/d1_town/shutter3.wav
+			wave	ambient/areas/d1_town/shutter4.wav
+			wave	ambient/areas/d1_town/shutter5.wav
+			wave	ambient/areas/d1_town/shutter6.wav
+			wave	ambient/areas/d1_town/shutter7.wav
+			wave	ambient/areas/d1_town/shutter8.wav
+		}
+	}
+
+	playrandom
+	{
+		position	4
+		time		3,6
+		volume		0.5,1.0
+		pitch		98,102
+
+		rndwave
+		{
+
+			wave	ambient/areas/d1_town/metal_stress1.wav
+			wave	ambient/areas/d1_town/metal_stress2.wav
+			wave	ambient/areas/d1_town/metal_stress3.wav
+			wave	ambient/areas/d1_town/metal_stress4.wav
+			wave	ambient/areas/d1_town/metal_stress5.wav
+		}		
+	}
+}
+
+d1_town_bigcave
+{
+	dsp 25
+	playlooping
+	{
+		volume 		0.9
+		pitch 		100
+		wave 		ambient/areas/d1_town/cave_amb1.wav
+	}
+
+	// POD
+	playlooping
+	{
+		position	0
+		volume		0.75
+		wave		ambient/areas/d1_town/pod_amb1.wav
+		pitch		100
+	}
+	
+	playrandom
+	{
+		position	0
+		time		1,2
+		volume		0.7,0.9
+		pitch		98,102
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/pod_hit1.wav
+			wave	ambient/areas/d1_town/pod_hit2.wav
+			wave	ambient/areas/d1_town/pod_hit3.wav
+			wave	ambient/areas/d1_town/pod_hit4.wav
+			wave	ambient/areas/d1_town/pod_hit5.wav
+			wave	ambient/areas/d1_town/pod_hit6.wav
+			wave	ambient/areas/d1_town/pod_hit7.wav
+			wave	ambient/areas/d1_town/pod_hit8.wav
+			wave	ambient/areas/d1_town/pod_hit9.wav
+			wave	ambient/areas/d1_town/pod_hit10.wav
+		}	
+
+	}
+
+	// support Metal Creak
+	playlooping
+	{
+		position	1
+		volume		0.65
+		wave		ambient/areas/d1_town/hole_amb3.wav
+		pitch		100
+	}
+
+	playrandom
+	{
+		position	1
+		time		3,6
+		volume		0.5,1.0
+		pitch		98,102
+
+		rndwave
+		{
+
+			wave	ambient/areas/d1_town/metal_stress1.wav
+			wave	ambient/areas/d1_town/metal_stress2.wav
+			wave	ambient/areas/d1_town/metal_stress3.wav
+			wave	ambient/areas/d1_town/metal_stress4.wav
+			wave	ambient/areas/d1_town/metal_stress5.wav
+		}	
+	}
+
+	// Drippies
+	playlooping
+	{
+		position	2
+		volume		0.65
+		wave		ambient/areas/d1_town/hole_amb3.wav
+		pitch		100
+	}
+
+	playrandom
+	{
+		position	2
+		time		0.5,1.5
+		volume		0.4,0.9
+		pitch		96,105
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/drip1.wav
+			wave	ambient/areas/d1_town/drip2.wav
+			wave	ambient/areas/d1_town/drip3.wav
+			wave	ambient/areas/d1_town/drip4.wav
+		}	
+	}
+
+	// Rubbles
+	playlooping
+	{
+		position	3
+		volume		0.65
+		wave		ambient/areas/d1_town/hole_amb3.wav
+		pitch		100
+	}
+
+	playrandom
+	{
+		position	3
+		time		5,7
+		volume		0.9,1.0
+		pitch		98,102
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/rock1.wav
+			wave	ambient/areas/d1_town/rock2.wav
+			wave	ambient/areas/d1_town/rock3.wav
+			wave	ambient/areas/d1_town/rock4.wav
+			wave	ambient/areas/d1_town/rock5.wav
+		}	
+	}
+
+	playrandom
+	{
+		time 		10,11
+		volume 		0.9,1.0
+		pitch 		100,101
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/cave_hit1.wav
+			wave	ambient/areas/d1_town/cave_hit2.wav
+			wave	ambient/areas/d1_town/cave_hit3.wav
+			wave	ambient/areas/d1_town/cave_hit4.wav
+			wave	ambient/areas/d1_town/cave_hit5.wav
+			wave	ambient/areas/d1_town/cave_hit6.wav
+
+		}		
+	}
+}
+
+d1_town_cavetunnel
+{
+	dsp	25
+	
+	// Drippies
+	playlooping
+	{
+		position	0
+		volume	0.65
+		wave		ambient/areas/d1_town/hole_amb3.wav
+		pitch		100
+	}
+
+	playrandom
+	{	
+		position	0
+		time		0.5,1.5
+		volume		0.7,0.9
+		pitch		96,105
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/drip1.wav
+			wave	ambient/areas/d1_town/drip2.wav
+			wave	ambient/areas/d1_town/drip3.wav
+			wave	ambient/areas/d1_town/drip4.wav
+		}
+	}
+	
+	playlooping
+	{
+		volume		0.8
+		pitch		100
+		wave		ambient/areas/d1_town/cave_tunnel_amb1.wav
+	}
+
+	playrandom
+	{
+		time		5,7
+		volume		0.5,1
+		pitch		50,120
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/rock1.wav
+			wave	ambient/areas/d1_town/rock2.wav
+			wave	ambient/areas/d1_town/rock3.wav
+			wave	ambient/areas/d1_town/rock4.wav
+			wave	ambient/areas/d1_town/rock5.wav
+			wave	ambient/areas/d1_town/cave_hit1.wav
+			wave	ambient/areas/d1_town/cave_hit2.wav
+			wave	ambient/areas/d1_town/cave_hit3.wav
+			wave	ambient/areas/d1_town/cave_hit4.wav
+			wave	ambient/areas/d1_town/cave_hit5.wav
+			wave	ambient/areas/d1_town/cave_hit6.wav
+			wave	ambient/areas/d1_town/rock1.wav
+			wave	ambient/areas/d1_town/rock2.wav
+			wave	ambient/areas/d1_town/rock3.wav
+			wave	ambient/areas/d1_town/rock4.wav
+			wave	ambient/areas/d1_town/rock5.wav
+			wave	ambient/areas/d1_town/drip1.wav
+			wave	ambient/areas/d1_town/drip2.wav
+			wave	ambient/areas/d1_town/drip3.wav
+			wave	ambient/areas/d1_town/drip4.wav
+		}		
+	}	
+}

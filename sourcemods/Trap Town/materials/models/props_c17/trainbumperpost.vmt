@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\props_c17\trainbumperpost"
+	"$envmap" "env_cubemap"
+	"$envmapmode" "1"
+	"$envmapmask" "models\props_c17\trainbumperpost_ref"
+
+}

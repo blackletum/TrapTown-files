@@ -1,0 +1,75 @@
+d1_town_indoor
+{
+	dsp	1
+	playlooping
+	{
+		volume		0.1
+		wave		ambient/areas/zombie_town/tone_quiet.wav
+		pitch		100
+		attenuation	0
+	}
+
+	playrandom
+	{
+		time		5,10
+		volume		0.95,1.0
+		pitch		95,105
+		attenuation	0
+
+		rndwave
+		{
+			wave	ambient/areas/d1_town/wood_creak1.wav
+			wave	ambient/areas/d1_town/wood_creak2.wav
+			wave	ambient/areas/d1_town/wood_creak3.wav
+			wave	ambient/areas/d1_town/wood_creak4.wav
+			wave	ambient/areas/d1_town/wood_creak5.wav
+			wave	ambient/areas/d1_town/wood_creak6.wav
+			wave	ambient/areas/zombie_town/wind_snippet2.wav
+			wave	ambient/areas/zombie_town/wind_snippet1.wav
+		    wave	ambient/areas/d1_town/hole_hit1.wav
+			wave	ambient/areas/d1_town/hole_hit2.wav
+			wave	ambient/areas/d1_town/hole_hit3.wav
+		    wave	ambient/areas/d1_town/hole_hit4.wav
+		    wave	ambient/areas/d1_town/rubble1.wav
+			wave	ambient/areas/d1_town/rubble2.wav
+			wave	ambient/areas/d1_town/rubble3.wav
+		}		
+	}
+}
+
+d1_town_street
+{
+	dsp	20	
+	playlooping
+	{
+		volume		0.8
+		wave		ambient/areas/zombie_town/tone_alley.wav
+		pitch		100
+		attenuation	0
+	}
+
+	playrandom
+	{
+		time		6,16
+		volume		0.3,0.7
+		pitch		95,105
+		attenuation	0
+		rndwave
+		{
+			wave	ambient/wind_moan1.wav
+			wave	ambient/wind_moan2.wav
+			wave	ambient/wind_moan3.wav
+			wave	ambient/wind_moan4.wav
+			wave	ambient/areas/zombie_town/crow1.wav
+			wave	ambient/areas/zombie_town/crow2.wav
+			wave	ambient/areas/zombie_town/crow3.wav
+			wave	ambient/areas/zombie_town/crow4.wav
+		    wave	ambient/areas/zombie_town/crow5.wav
+			wave	ambient/areas/zombie_town/wind_snippet1.wav
+			wave	ambient/areas/zombie_town/wind_snippet2.wav
+			wave	ambient/areas/zombie_town/wind_snippet3.wav
+			wave	ambient/areas/zombie_town/wind_snippet4.wav
+		    wave	ambient/areas/zombie_town/wind_snippet5.wav
+		}		
+	}
+}

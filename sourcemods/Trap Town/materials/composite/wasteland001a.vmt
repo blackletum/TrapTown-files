@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	// Original shader: BaseTimesLightmap
+	"$basetexture" "Composite/wasteland001a"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "Composite/wasteland001a_normal2"
+	"%keywords" "wasteland"
+	
+	"$detail" "detail\rock_detail_01"
+	"$detailscale" "10"
+	"$detailblendfactor" 0.3
+	"$detailblendmode" 0
+}

@@ -1,0 +1,7 @@
+VertexlitGeneric
+{
+	$basetexture 	models/props_c17/trashcan02
+	$envmap			env_cubemap
+	$envmaptint 	"[.25 .25 .25]"
+	$envmapsaturation 0.7
+}

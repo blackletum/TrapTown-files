@@ -1,0 +1,12 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "nature/dirtfloor004a"
+	"$basetexture2" "nature/gravelfloor002a"
+	"%tooltexture" "nature/rockwall009a"
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[ .5 .5 .5]"
+	"$envmap" "env_cubemap"
+//	"%detailtype" "rocks1"
+	"%keywords" "wasteland"
+}
